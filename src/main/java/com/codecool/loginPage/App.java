@@ -8,7 +8,7 @@ public class App
 {
     public static void main( String[] args ) throws IOException {
         LocalDB localDB = new LocalDB();
-        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8001), 0);
         server.createContext("/login", new LogIn(localDB));
         server.createContext("/logout", new LogOut(localDB));
         server.createContext("/static", new Static());

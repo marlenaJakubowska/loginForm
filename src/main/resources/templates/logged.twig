@@ -3,17 +3,20 @@
 <html lang="ENG">
 <head>
     <link rel="shortcut icon" href="#">
+    <link href="/static/normalize.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/skeleton.css">
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
 <body>
-<form method="GET">
+<div class="container">
+    <form method="GET">
     <h1>WELCOME</h1>
-    <div>
-        Hello, {{ username }}!
-    </div>
-    <a href="logout"> Log out</a>
-
-</form>
+        <div>
+            Hello, {{ username }}!
+        </div>
+        <a href="logout"> Log out</a>
+    </form>
+</div>
 </body>
 </html>
